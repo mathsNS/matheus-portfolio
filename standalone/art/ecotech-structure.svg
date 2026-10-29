@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102d41"/><stop offset="1" stop-color="#071522"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#83cce0" stop-opacity=".30"/><stop offset="1" stop-color="#39728c" stop-opacity=".07"/></linearGradient>
+<pattern id="grid" width="55" height="55" patternUnits="userSpaceOnUse"><path d="M55 0H0V55" fill="none" stroke="#a8dcec" stroke-opacity=".06"/></pattern>
+<filter id="halo"><feGaussianBlur stdDeviation="32" /></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="1170" cy="470" r="250" fill="#3e9ab9" opacity=".10" filter="url(#halo)"/>
+<path d="M75 744H1526" stroke="#8dd4e5" stroke-opacity=".17"/>
+<text x="78" y="110" font-family="Arial,sans-serif" font-size="22" fill="#7bc5da" letter-spacing="5">ECOTECH  /  CONCEPT STUDY</text>
+<text x="78" y="224" font-family="Arial,sans-serif" font-size="96" font-weight="700" fill="#edf7fa" letter-spacing="-5">ENGENHARIA</text>
+<text x="78" y="322" font-family="Arial,sans-serif" font-size="96" font-weight="700" fill="#edf7fa" letter-spacing="-5">EM CAMADAS<tspan fill="#85d1e3">.</tspan></text>
+<text x="82" y="394" font-family="Arial,sans-serif" font-size="25" fill="#94bac9">Python · Flask · SQLite</text>
+<g font-family="monospace" font-size="24" text-anchor="middle" fill="#e4f8fa">
+<g transform="translate(1100 220)"><path d="M-274 86L0 -24L274 86L0 197Z" fill="#255c74" stroke="#9bd9e8" stroke-width="3"/><text y="90">DOMAIN</text>
+<path d="M-274 194L0 84L274 194L0 305Z" fill="#1d4d64" stroke="#81c9e1" stroke-width="3"/><text y="196">APPLICATION</text>
+<path d="M-274 302L0 192L274 302L0 413Z" fill="#163b52" stroke="#6cb5d0" stroke-width="3"/><text y="303">INFRASTRUCTURE</text>
+<path d="M-274 86V194M274 86V194M-274 194V302M274 194V302" stroke="#7dbbd0" stroke-opacity=".28" stroke-dasharray="7 11"/>
+</g></g>
+<g transform="translate(88 540)"><rect width="505" height="133" fill="#102c3d" stroke="#79c1d6" stroke-opacity=".46"/><text x="25" y="43" font-family="monospace" font-size="20" fill="#8dd2e3" letter-spacing="2">BACKEND</text><text x="25" y="92" font-family="Arial,sans-serif" font-size="29" fill="#d3ebf2">Fluxos, estados e dados.</text></g>
+<text x="80" y="826" font-family="monospace" font-size="16" letter-spacing="2" fill="#74b7cb">CONCEPTUAL ARTWORK  /  NO REAL DATA</text>
+</svg>

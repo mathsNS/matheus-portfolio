@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102d41"/><stop offset="1" stop-color="#071522"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#83cce0" stop-opacity=".30"/><stop offset="1" stop-color="#39728c" stop-opacity=".07"/></linearGradient>
+<pattern id="grid" width="55" height="55" patternUnits="userSpaceOnUse"><path d="M55 0H0V55" fill="none" stroke="#a8dcec" stroke-opacity=".06"/></pattern>
+<filter id="halo"><feGaussianBlur stdDeviation="32" /></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<circle cx="1170" cy="470" r="250" fill="#3e9ab9" opacity=".10" filter="url(#halo)"/>
+<path d="M75 744H1526" stroke="#8dd4e5" stroke-opacity=".17"/>
+<text x="78" y="110" font-family="Arial,sans-serif" font-size="22" fill="#7bc5da" letter-spacing="5">ECOTECH  /  CONCEPT STUDY</text>
+<text x="78" y="231" font-family="Arial,sans-serif" font-size="93" font-weight="700" fill="#e7f5f8" letter-spacing="-5">DO DESCARTE</text>
+<text x="78" y="327" font-family="Arial,sans-serif" font-size="93" font-weight="700" fill="#e7f5f8" letter-spacing="-5">AO DESTINO<tspan fill="#85d1e3">.</tspan></text>
+<text x="81" y="402" font-family="Arial,sans-serif" font-size="25" fill="#94bac9">Uma jornada digital com etapas rastreáveis.</text>
+<g transform="translate(110 542)"><path d="M110 65H1270" stroke="#85d1e3" stroke-width="3" stroke-dasharray="8 12"/>
+<g font-family="Arial,sans-serif" font-size="22" fill="#d9f1f6" text-anchor="middle">
+<g transform="translate(115 65)"><circle r="56" fill="#183f52" stroke="#9bd8e8" stroke-width="3"/><path d="M-17 -12h34v24h-34zM-9 -21v9M9 -21v9" fill="none" stroke="#c5eef4" stroke-width="3"/><text y="108">Solicitação</text></g>
+<g transform="translate(475 65)"><circle r="56" fill="#183f52" stroke="#9bd8e8" stroke-width="3"/><path d="M-22 16h44M-20 15V-8l20 -14 20 14v23" fill="none" stroke="#c5eef4" stroke-width="3"/><text y="108">Coleta</text></g>
+<g transform="translate(835 65)"><circle r="56" fill="#183f52" stroke="#9bd8e8" stroke-width="3"/><path d="M-19 -13h38l-9 36h-20zM-7 -19h14" fill="none" stroke="#c5eef4" stroke-width="3"/><text y="108">Triagem</text></g>
+<g transform="translate(1195 65)"><circle r="56" fill="#183f52" stroke="#9bd8e8" stroke-width="3"/><path d="M-18 5l13 13 27 -30" fill="none" stroke="#c5eef4" stroke-width="4"/><text y="108">Destinação</text></g>
+</g></g>
+<text x="80" y="826" font-family="monospace" font-size="16" letter-spacing="2" fill="#74b7cb">CONCEPTUAL ARTWORK  /  NO REAL DATA</text>
+</svg>
