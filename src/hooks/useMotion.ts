@@ -48,10 +48,10 @@ export function useScrollReveals(reduced: boolean) {
     if (reduced) return;
     const q = gsap.utils.toArray<HTMLElement>;
 
-    // Editorial section titles: clipped reveal, not a generic fade-in.
+    // Keep accents and descenders visible throughout title reveals.
     q('.section-heading').forEach(el => {
-      gsap.fromTo(el, { clipPath: 'inset(0 0 95% 0)', y: 38 }, {
-        clipPath: 'inset(0 0 0% 0)', y: 0, duration: 1.2, ease: 'power4.out',
+      gsap.fromTo(el, { opacity: 0, y: 38 }, {
+        opacity: 1, y: 0, duration: 1.2, ease: 'power4.out',
         scrollTrigger: { trigger: el, start: 'top 89%', once: true },
       });
     });
@@ -61,23 +61,14 @@ export function useScrollReveals(reduced: boolean) {
       });
     });
 
-    // Image panels emerge from alternating edges; internal artwork floats at a different rate.
-    q('.project-panel').forEach((panel, i) => {
+    // Reveal the project information while keeping the gallery still.
+    q('.project-panel').forEach((panel) => {
       const gallery = panel.querySelector<HTMLElement>('.gallery-viewport');
       const info = panel.querySelector<HTMLElement>('.project-information');
       if (!gallery || !info) return;
-      const direction = i % 2 ? -1 : 1;
-      gsap.fromTo(gallery, { clipPath: direction > 0 ? 'inset(0 18% 0 0)' : 'inset(0 0 0 18%)', x: 28 * direction }, {
-        clipPath: 'inset(0 0 0 0)', x: 0, duration: 1.3, ease: 'power3.inOut',
-        scrollTrigger: { trigger: panel, start: 'top 82%', once: true },
-      });
       gsap.fromTo(info.querySelectorAll('[data-panel]'), { y: 45, opacity: 0 }, {
         y: 0, opacity: 1, duration: .95, stagger: .105, ease: 'power3.out',
         scrollTrigger: { trigger: panel, start: 'top 77%', once: true },
-      });
-      gsap.to(gallery.querySelectorAll('.gallery-slide img'), {
-        yPercent: i % 2 ? 5 : -5, ease: 'none',
-        scrollTrigger: { trigger: panel, start: 'top bottom', end: 'bottom top', scrub: 1.4 },
       });
     });
 
@@ -102,8 +93,8 @@ export function useScrollReveals(reduced: boolean) {
     });
 
     // About: a light editorial interlude, with its own wipe / underline gesture.
-    gsap.fromTo('.about-statement', { clipPath: 'inset(0 0 100% 0)', y: 50 }, {
-      clipPath: 'inset(0 0 0% 0)', y: 0, ease: 'power4.out', duration: 1.45,
+    gsap.fromTo('.about-statement', { opacity: 0, y: 50 }, {
+      opacity: 1, y: 0, ease: 'power4.out', duration: 1.45,
       scrollTrigger: { trigger: '.about-section', start: 'top 70%', once: true },
     });
     gsap.fromTo('.about-underline', { scaleX: 0 }, {

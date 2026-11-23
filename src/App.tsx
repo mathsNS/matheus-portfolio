@@ -50,7 +50,7 @@ export default function App() {
     {!preloaded && !reduced && <div className="intro-overlay" aria-hidden="true"><div className="intro-wordmark">MN<span>.</span></div></div>}
     <Cursor />
     <Header />
-    <main><Hero /><Work onOpen={openProject}/><Experience/><Expertise/><About/><Education/></main>
+    <main><Hero /><Work onOpen={openProject} galleryEnabled={!activeProject}/><Experience/><Expertise/><About/><Education/></main>
     <Contact />
     {activeProject && <CaseStudy project={activeProject} onClose={closeProject} />}
   </>;

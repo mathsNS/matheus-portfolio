@@ -9,7 +9,7 @@ const socials = [
   { label: 'GitHub', url: identity.github },
   { label: 'LinkedIn', url: identity.linkedin },
   { label: 'E-mail', url: identity.email ? `mailto:${identity.email}` : '' },
-  { label: 'Currículo', url: identity.resume },
+  { label: 'Solicitar currículo', url: identity.resume },
 ];
 export function Contact() {
   const spotlight = (event: PointerEvent<HTMLElement>) => {
