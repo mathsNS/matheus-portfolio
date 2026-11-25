@@ -23,6 +23,6 @@ export function Contact() {
     <div className="contact-heading" data-reveal><span>VAMOS</span><span className="contact-heading-last">CONVERSAR<span className="contact-star">.</span></span></div>
     <div className="contact-bottom"><p>Disponível para conversar sobre projetos, desenvolvimento de software e oportunidades profissionais.</p><Magnetic><a className="contact-orb" href={identity.email ? `mailto:${identity.email}` : '#social-links'} aria-label={identity.email ? 'Enviar e-mail' : 'Ver canais de contato'}><ArrowUpRight size={42} strokeWidth={1.4}/></a></Magnetic></div>
     <div className="contact-links" id="social-links">{socials.map((s) => s.url ? <a href={s.url} key={s.label} target={s.url.startsWith('http') ? '_blank' : undefined} rel={s.url.startsWith('http') ? 'noopener noreferrer' : undefined}>{s.label}<ArrowUpRight size={16}/></a> : <span className="social-pending" key={s.label} title="Link ainda não configurado">{s.label} <span>em breve</span></span>)}</div>
-    <div className="footer-bottom"><a className="footer-logo" href="#home">MN<span>.</span></a><span>© {new Date().getFullYear()} MATHEUS NOGUEIRA</span><a href="#home" className="back-top">VOLTAR AO TOPO ↑</a></div>
+    <div className="footer-bottom"><a className="footer-logo" href="#home" aria-label="Matheus Nogueira, in?cio"><img className="brand-image" src={`${import.meta.env.BASE_URL}logo-mn.png`} alt=""/></a><span>© {new Date().getFullYear()} MATHEUS NOGUEIRA</span><a href="#home" className="back-top">VOLTAR AO TOPO ↑</a></div>
   </div></footer>;
 }

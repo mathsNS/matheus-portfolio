@@ -27,6 +27,7 @@ export function Orbital() {
     <div className="orbital-stage">
       <svg viewBox="0 0 600 600" role="presentation">
         <defs>
+          <filter id="orbitLogoTransparent" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.4  0 0 0 0 0.75  0 0 0 0 0.82  0.4 0.4 0.4 0 -0.12" /></filter>
           <linearGradient id="orbitGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#66BFD0" stopOpacity="0.9"/><stop offset="1" stopColor="#66BFD0" stopOpacity="0.05"/></linearGradient>
         </defs>
         <circle cx="300" cy="300" r="280" fill="none" stroke="#66bfd0" strokeOpacity=".06" />
@@ -48,8 +49,7 @@ export function Orbital() {
         </g>
         <circle cx="300" cy="300" r="91" fill="#071a2a" stroke="#66bfd0" strokeOpacity=".4" />
         <circle cx="300" cy="300" r="75" fill="#66bfd0" fillOpacity=".04" />
-        <path d="M261 322v-47l21 27 18-27v47M315 322v-47l28 47v-47" fill="none" stroke="#66bfd0" strokeWidth="7" strokeLinejoin="miter" strokeLinecap="square" />
-        <circle cx="300" cy="300" r="6" fill="none" stroke="#66bfd0" strokeOpacity=".13" />
+        <image href={`${import.meta.env.BASE_URL}logo-mn.png`} x="195" y="195" width="210" height="210" filter="url(#orbitLogoTransparent)" />
       </svg>
     </div>
   </div>;

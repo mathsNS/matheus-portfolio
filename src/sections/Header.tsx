@@ -28,7 +28,7 @@ export function Header() {
   }, [open]);
   return <>
     <header className="site-header" id="top">
-      <a className="brand" href="#home" aria-label="Matheus Nogueira, início"><span className="brand-box">MN<span className="brand-dot">.</span></span></a>
+      <a className="brand" href="#home" aria-label="Matheus Nogueira, início"><img className="brand-image" src={`${import.meta.env.BASE_URL}logo-mn.png`} alt=""/></a>
       <nav className="nav-desktop" aria-label="Navegação principal">
         {links.map((link) => <a key={link.id} className={active === link.id ? 'nav-active' : ''} href={link.href}>{link.label}</a>)}
       </nav>

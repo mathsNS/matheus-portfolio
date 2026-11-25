@@ -47,7 +47,7 @@ export default function App() {
     return () => { timeline.kill(); };
   }, [reduced]);
   return <>
-    {!preloaded && !reduced && <div className="intro-overlay" aria-hidden="true"><div className="intro-wordmark">MN<span>.</span></div></div>}
+    {!preloaded && !reduced && <div className="intro-overlay" aria-hidden="true"><div className="intro-wordmark"><img className="brand-image" src={`${import.meta.env.BASE_URL}logo-mn.png`} alt=""/></div></div>}
     <Cursor />
     <Header />
     <main><Hero /><Work onOpen={openProject} galleryEnabled={!activeProject}/><Experience/><Expertise/><About/><Education/></main>
