@@ -18,14 +18,15 @@ No PowerShell, se a execução de `npm.ps1` estiver bloqueada, use `npm.cmd` no 
 
 ## Conteúdo
 
-- `src/data/content.ts` concentra contatos, projetos em destaque, catálogo, experiências, tecnologias e formação.
-- `projects` controla a vitrine e os estudos de caso; `catalogWorks` inclui também trabalhos sem interface. Use `projectSlug` para ligar um item do catálogo a um projeto da vitrine.
+- `src/data/content.ts` concentra contatos, projetos, experiências, tecnologias e formação. Cada trabalho é cadastrado uma vez na lista `works`, na ordem em que deve aparecer.
+- Em um projeto completo, use `featured: true` para exibi-lo na página inicial e no catálogo; use `featured: false` para exibi-lo somente em “Ver todos os trabalhos”. A pesquisa e os filtros usam o título, resumo, tipo e tags do mesmo cadastro.
+- Projetos completos podem ter galeria, link `repoUrl` e seções em `details`. Trabalhos sem imagens podem ser cadastrados na mesma lista com `featured: false`, título, resumo, tags e uma descrição opcional em `details`; eles aparecem apenas no catálogo.
 - A classificação de cada trabalho é opcional; adicione somente informações verificadas. Links de certificados e detalhes de projetos podem ser acrescentados quando disponíveis.
 - A solicitação de currículo abre um e-mail; não há PDF hospedado.
 
 ## Mídias
 
-Os arquivos efetivamente publicados ficam em `public/projects/<projeto>/`. Para uma imagem, adicione um item com `src`, `alt` e `caption` em `projects[].images`. Para vídeos, use `type: 'video'` e `poster`. Mídias verticais usam `portrait: true` para serem exibidas com o frame de celular. O frame está em `public/art/iphone-frame.png`.
+Os arquivos efetivamente publicados ficam em `public/projects/<projeto>/`. Para uma imagem, adicione um item com `src`, `alt` e `caption` em `works[].images`. Para vídeos, use `type: 'video'` e `poster`. Mídias verticais usam `portrait: true` para serem exibidas com o frame de celular. O frame está em `public/art/iphone-frame.png`.
 
 Os vídeos são reproduzidos silenciosamente quando entram na tela e pausam quando saem dela. O carrossel oferece navegação manual e pausa da troca automática; a preferência por movimento reduzido é respeitada. As pastas em `sistemas/` guardam mídias originais locais e não são necessárias no build.
 
