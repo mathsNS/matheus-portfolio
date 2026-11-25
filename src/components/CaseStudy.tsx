@@ -26,7 +26,7 @@ export function CaseStudy({ project, onClose }: { project: Project; onClose: () 
   }, [onClose]);
   return <div className="case-overlay" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
     <section className="case-study" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="case-title">
-      <div className="case-toolbar"><span>MN / PROJETOS — {project.number}</span><button type="button" ref={closeRef} onClick={onClose} aria-label="Fechar estudo de caso"><X size={23}/></button></div>
+      <div className="case-toolbar"><span>MN / PROJETOS - {project.number}</span><button type="button" ref={closeRef} onClick={onClose} aria-label="Fechar estudo de caso"><X size={23}/></button></div>
       <div className="case-body"><span className="case-category">{project.category} / {project.year}</span><h2 id="case-title">{project.title}<span>.</span></h2><p className="case-tagline">{project.subtitle}</p>
         <div className="case-content"><div className="case-cover"><ProjectGallery project={project} /></div>
         <div className="case-columns"><div><span className="case-eyebrow">01 / SOBRE O PROJETO</span><p>{project.challenge}</p></div><div><span className="case-eyebrow">02 / DESENVOLVIMENTO</span><p>{project.approach}</p></div><div><span className="case-eyebrow">03 / O QUE FOI FEITO</span><p>{project.outcome}</p></div></div></div>

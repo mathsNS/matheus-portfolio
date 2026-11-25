@@ -1,4 +1,4 @@
-﻿# Portfólio — Matheus Nogueira
+﻿# Portfólio - Matheus Nogueira
 
 Portfólio em React, TypeScript e Vite, publicado em [mathsns.github.io/matheus-portfolio](https://mathsns.github.io/matheus-portfolio/). A versão em `src/` é a principal; `standalone/` é uma versão antiga independente e não acompanha automaticamente as atualizações da versão React.
 

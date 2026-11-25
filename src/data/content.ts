@@ -1,4 +1,4 @@
-/** EDIT HERE — all externally visible personal data lives in this file. */
+/** EDIT HERE - all externally visible personal data lives in this file. */
 export const identity = {
   name: 'Matheus Nogueira',
   role: 'Engenharia de Software',
@@ -127,9 +127,9 @@ export const projects = works.filter(isProject);
 export const featuredProjects = projects.filter((project) => project.featured);
 
 export const experiences = [
-  { index: '01', org: 'Unimed Cariri', role: 'Estagiário de TI', period: '2026 — atual', type: 'Tecnologia corporativa', description: 'Desenvolvimento e suporte a automações, APIs, integrações e soluções em ambientes corporativos.', keys: ['Automações', 'APIs', 'Integrações'] },
+  { index: '01', org: 'Unimed Cariri', role: 'Estagiário de TI', period: '2026 - atual', type: 'Tecnologia corporativa', description: 'Desenvolvimento e suporte a automações, APIs, integrações e soluções em ambientes corporativos.', keys: ['Automações', 'APIs', 'Integrações'] },
   { index: '02', org: 'Sensor Ocupacional', role: 'Analista de Sistemas Júnior', period: 'Experiência profissional', type: 'Sistemas de negócio', description: 'Desenvolvimento de sistemas internos, incluindo soluções de estoque, ferramentas web e melhorias de processos.', keys: ['Sistemas internos', 'Web', 'Processos'] },
-  { index: '03', org: 'Calang.io', role: 'Diretor Presidente', period: '2026 — atual', type: 'Liderança & tecnologia', description: 'Liderança de uma empresa júnior de tecnologia, com atuação em projetos, gestão de equipes e desenvolvimento de soluções.', keys: ['Liderança', 'Projetos', 'Estratégia'] },
+  { index: '03', org: 'Calang.io', role: 'Diretor Presidente', period: '2026 - atual', type: 'Liderança & tecnologia', description: 'Liderança de uma empresa júnior de tecnologia, com atuação em projetos, gestão de equipes e desenvolvimento de soluções.', keys: ['Liderança', 'Projetos', 'Estratégia'] },
 ];
 
 export const expertise = [
@@ -140,7 +140,7 @@ export const expertise = [
 ];
 
 export const education = [
-  { type: 'GRADUAÇÃO', title: 'Engenharia de Software', org: 'Universidade Federal do Cariri — UFCA', note: 'Graduação em andamento' },
+  { type: 'GRADUAÇÃO', title: 'Engenharia de Software', org: 'Universidade Federal do Cariri - UFCA', note: 'Graduação em andamento' },
   { type: 'APRENDIZADO AWS', title: 'AWS Technical Essentials', org: 'Treinamento concluído', note: '' },
   { type: 'BADGE AWS', title: 'AWS Cloud Quest: Cloud Practitioner', org: 'Badge de aprendizado', note: '' },
 ];

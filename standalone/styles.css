@@ -2074,7 +2074,7 @@ button:disabled {
     outline-color: #154b63;
 }
 
-/* v1.1 — Abyss / petroleum editorial direction */
+/* v1.1 - Abyss / petroleum editorial direction */
 :root {
   color: #e9f2f6;
   background: #07111e;
@@ -2212,7 +2212,7 @@ button:disabled {
 @media(max-width:600px) { .gallery-slide img {object-fit:contain; } .gallery-viewport {aspect-ratio:1.15;} }
 
 
-/* V3 — editorial two-column work studies; imagery never overwhelms the copy. */
+/* V3 - editorial two-column work studies; imagery never overwhelms the copy. */
 .work-section { padding-top: clamp(92px, 10vw, 138px); }
 .project-list { display:flex; flex-direction:column; gap:clamp(90px, 10vw, 150px); }
 .project-panel {
@@ -2257,7 +2257,7 @@ button:disabled {
   .gallery-autoplay-track{display:none}
 }
 
-/* V4 — understated, motion-led editorial treatment.
+/* V4 - understated, motion-led editorial treatment.
    The 3D scene and all gallery/intro progress bars have been retired. */
 :root { --accent:#83c8d9; --focus:#a4deeb; }
 body { background:#07111e; }
